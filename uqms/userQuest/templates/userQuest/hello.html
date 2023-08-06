@@ -1,0 +1,18 @@
+{% extends 'userQuest/base.html' %}
+
+{% block content %}
+        <h1>USer Informations</h1>
+        <p>My favourite users are:</p>
+        <ul>
+            <li>Name: {{1stuser_name.display_name}} </li>
+            <li>Email: {{1stuser_name.email}} </li>
+            <li>Phone: {{1stuser_name.phone}} </li>
+        </ul>
+
+
+        <h1>Please select the appropriate option</h1>
+        <p>Question: {{1stquestion_name.question}}
+            {{1stquestion_name.options1}}
+        </p>
+
+{% endblock %}
